@@ -1,0 +1,98 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.chocoland.Test</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductsServlet</servlet-name>
+    <servlet-class>com.chocoland.ProductsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductDetailsServlet</servlet-name>
+    <servlet-class>com.chocoland.ProductDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>CartServlet</servlet-name>
+      <servlet-class>com.chocoland.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>OrderSubmitServlet</servlet-name>
+      <servlet-class>com.chocoland.OrderSubmitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PreviousOrdersServlet</servlet-name>
+    <servlet-class>com.chocoland.PreviousOrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RatingServlet</servlet-name>
+    <servlet-class>com.chocoland.RatingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HeaderServlet</servlet-name>
+    <servlet-class>com.chocoland.HeaderServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CityStateServlet</servlet-name>
+    <servlet-class>com.chocoland.CityStateServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/api/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductsServlet</servlet-name>
+    <url-pattern>/api/products</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductDetailsServlet</servlet-name>
+    <url-pattern>/api/product-details/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/api/cart/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSubmitServlet</servlet-name>
+    <url-pattern>/api/order-submit/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PreviousOrdersServlet</servlet-name>
+    <url-pattern>/api/previous-orders/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RatingServlet</servlet-name>
+    <url-pattern>/api/rating/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HeaderServlet</servlet-name>
+    <url-pattern>/api/header</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CityStateServlet</servlet-name>
+    <url-pattern>/api/zip/*</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/api/cart/</url-pattern>
+  </servlet-mapping> -->
+
+  <!-- <welcome-file-list>
+    <welcome-file>/index.jsp</welcome-file>
+  </welcome-file-list>   -->
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/index.jsp</location>
+  </error-page>
+</web-app>

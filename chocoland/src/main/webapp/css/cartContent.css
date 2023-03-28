@@ -1,0 +1,42 @@
+
+
+.confirmation-body
+{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right:100px;
+    margin-bottom: 150px;
+}
+
+.container 
+{
+
+    max-width: 960px;
+    padding-left:50px;
+}
+
+.lh-condensed { 
+  line-height: 1.25;
+}
+
+#stateResults {
+  border: 1px #c8815f;
+  padding: 3px;
+}
+#stateResults ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#stateResults ul li {
+  padding: 5px 0;
+  padding-left: 10px;
+
+}
+
+#stateResults ul li:hover 
+{
+  background: #c8815f;
+  color: white;
+}

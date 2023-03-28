@@ -1,0 +1,152 @@
+
+:root {
+--color-primary: #4c4c4c;
+--color-secondary: #a6a6a6;
+--color-highlight: #9f7462;
+}
+
+/* ----- Global ----- */
+* {
+	box-sizing: border-box;
+}
+
+/* html,
+body {
+	height: 100%;
+} */
+
+product-details-body {
+	display: grid;
+	grid-template-rows: 1fr;
+	font-family: "Raleway", sans-serif;
+	background-color: #9f7462;
+	margin-top: 100px;
+    margin-right: 50px;
+}
+
+.product-details-h3 {
+	font-size: 0.7em;
+	letter-spacing: 1.2px;
+	color: var(color-secondary);
+}
+
+product-details-img {
+			max-width: 100%;
+			filter: drop-shadow(1px 1px 3px var(color-secondary));
+
+		}
+
+/* ----- Product Section ----- */
+.pd-product {
+	display: grid;
+	grid-template-columns: 0.9fr 1fr;
+	margin: auto;
+	padding: 4em 0;
+	min-width: 600px;
+	background-color: white;
+	border-radius: 5px;
+	margin-top:100px;
+}
+
+/* ----- Photo Section ----- */
+.product_image {
+	position: relative;
+	margin-left: 300px;
+	padding: 30px 30px;
+}
+
+
+.image-container {
+	position: absolute;
+	left: -2.5em;
+	display: grid;
+	grid-template-rows: 1fr;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+}
+
+.image-main {
+	border-radius: 6px 6px 0 0;
+	/* background-color: #9be010; */
+	
+}
+
+.product-details-image{
+    position: absolute;
+    left: -3.5em;
+    top: 2em;
+    max-width: 110%;
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg)
+        drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+
+.photo-album {
+	padding: 0.7em 1em;
+	border-radius: 0 0 6px 6px;
+	background-color: #fff;
+}
+
+/* ----- Informations Section ----- */
+.product-info {
+	padding: 0.8em 0;
+}
+
+
+
+.product-detail-title h1{
+    margin-bottom: 0.1em;
+    color: var(color-primary);
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.product-detail-title span {
+    font-size: 1em;
+    color: var(color-secondary);
+}
+
+.pd-cost {
+	margin: 1.5em 0;
+	color: (color-highlight);
+	font-size: 1.2em;
+
+	
+}
+.pd-cost span {
+    padding-left: 0.15em;
+    font-size: 2.9em;
+}
+
+
+.pd-description {
+	clear: left;
+	margin: 2em 0;
+
+}
+.pd-description 	h3 {
+    margin-bottom: 1em;
+}
+
+.pd-description 	ul {
+    font-size: 0.8em;
+    list-style: disc;
+    margin-left: 1em;
+}
+
+.pd-description 	li {
+    text-indent: -0.6em;
+    margin-bottom: 0.5em;
+}
+
+.pd-button
+{
+	border-color: #9f7462;
+}
+.pd-button:hover
+{
+	cursor: pointer;
+    transform: scale(0.97);
+
+}

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<script>
+const sublistCards = () => {
+    let products = [
+        {
+            "id": 4,
+            "name": "Milka",
+            "category": "milk",
+            "description": "Normal Milk Chocolates",
+            "cost": 4,
+            "image": "images/milka.jpeg",
+            "brand": "milka"
+        },
+        {
+            "id": 8,
+            "name": "Godiva White Chocolate Assortment Gift Box",
+            "category": "white",
+            "description": "A box full of Godiva's white chocolate assortment",
+            "cost": 30,
+            "image": "images/godivawhite.jpg",
+            "brand": "godiva"
+        },
+
+        {
+            "id": 1,
+            "name": "Kinder",
+            "category": "milk",
+            "description": "Round chocolate with white chocolate filling.",
+            "cost": 2,
+            "image": "images/kinder.jpeg",
+            "brand": "kinder"
+        },
+      ];
+
+        let str = "";
+
+        products.forEach(function(product) {
+            str += 
+                '<div class="box">'+
+                '<a href=../ProductDetail onclick={localStorage.setItem("productId",'+product.id+');}>'+
+                '<img src='+product.image+'></img></a>' +
+                '<h5>' + product.name + '</h5>' +
+                '</div>';
+        }); 
+        console.log(str);
+        const products_div = document.getElementById("productDiv");
+        products_div.innerHTML = str;
+
+            // creating a sticky navigation bar
+            const header = document.querySelector(".navbar-header");
+
+        window.addEventListener("scroll", () => {
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    };
+
+
+
+</script>
+    <body onload = "sublistCards()">
+        <header class="navbar-header">
+            <a href="#" class="logo">Chocoland</a>
+            <ul class="nav-bar">
+                <li><a href="http://localhost:8080/chocoland/">Home</a></li>
+                <!-- <li><a href="./api/products">Products</a></li> -->
+                <li><a href="products.jsp">Products</a></li>
+                <li><a href="previousOrders.jsp">My Orders</a></li>
+                <li><a href="about.jsp">About</a></li>
+            </ul>
+            <div class="header-icons">
+                <a href="./api/cart"><i class='bx bx-cart-alt'></i></a>
+                <div id="side-bar-icon"><i class='bx bx-sidebar'></i></div>
+            </div>
+        </header>
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1> New Chocolate <br/> <span> Arrivals</span></h1>
+                <p> Swiss chocolate available in bulks!</p>
+                <a href="products.jsp" class="button">Yummy chocolate</a>
+                <!-- <div><a href="./api/test">TESTLINK</a></div> -->  </div>
+                <!-- <div><a href="./api/products">Products</a></div>
+                <div><a href="./api/cart">Cart</a></div>
+                <div><a href="./api/previous-orders">My Orders</a></div> -->
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="centered-text">
+                <h2>Featured Categories</h2>
+            </div>
+
+            <div class="featured-content">
+                <div class="row">
+                    <!-- <a href="./api/products"> -->
+                        <img src="images/white.jpg"></img>
+                        <div class="feature-text">
+                            <h5>White</h5>
+                        </div>
+                    <!-- </HashLink> -->
+                </div>
+
+                <div class="row">
+                    <!-- <a href="./api/products"> -->
+                    <img src="images/dark.jpg"></img>
+                    <div class="feature-text">
+                        <h5>Dark</h5>
+                    </div>
+                    <!-- </HashLink> -->
+                </div>
+
+                <div class="row">
+                    <!-- <a href="./api/products"> -->
+                        <img src="images/milk.jpg"></img>
+                        <div class="feature-text">
+                            <h5>Milk</h5>
+                        </div>
+                    <!-- </HashLink> -->
+                </div>  
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-text">
+                <h6> Chocolates on Sale</h6>
+                <h4> 20% OFF <br/> FERRERO</h4>
+                <!-- <a href="./api/products" class="button">Shop Now</a> -->
+            </div>
+        </section>
+
+        <section class="new" id="new">
+            <div class="centered-text">
+                <h2>New Tastes!</h2>
+            </div>
+
+             
+            <div class="new-content" id="productDiv" >
+
+            </div>
+
+
+        </section>
+
+
+        <section class="contact" id="contact">
+
+            <div class="main-contact">
+                <h3>ChocoLand</h3>
+                <h5>Contact us</h5>
+                <div class="icons">
+                    <a href="#"><i class='bx bxl-gmail'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+            </div>
+
+            <div class="main-contact">
+                <h3>Keep browsing</h3>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+
+            <div class="main-contact">
+                <h3> Services </h3>
+                <li><a href="#home">Order</a></li>
+                <li><a href="#home">Check order status</a></li>
+            </div>
+        </section>
+    </body>

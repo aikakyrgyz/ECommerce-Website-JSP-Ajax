@@ -1,0 +1,12 @@
+id,name,category,description,cost,image,brand
+1,Kinder,milk,Round chocolate with white chocolate filling.,2,../images/products/kinder.jpeg,kinder
+2,Chocolate bars,dark,Assorted chocolate bars,3,../images/products/bars.jpg,other
+3,Ferrero By Piece,dark,Round chocolate truffles,3,../images/products/ferrero.jpeg,ferrero
+4,Milka,milk,Normal Milk Chocolates,4,../images/products/milka.jpeg,milka
+5,Assorted Sees Candy Box,dark,Box full of assorted Sees Candy chocolates,30,../images/products/sees.jpg,sees
+6,Sees Candy - White Chocolate Box,white,20 pcs of Sees Candy white chocolate!,35,../images/products/seeswhite.jpg,sees
+7,Lindt Lindor White Chocolate Truffle,white,A bag of the famous lindt lindor's white chocolate!,14,../images/products/lindorwhite.jpg,lindor
+8,Godiva White Chocolate Assortment Gift Box,white,A box full of Godiva's white chocolate assortment,30,../images/products/godivawhite.jpg,godiva
+9,Godiva Milk Chocolate Gift Box,milk,A box of Godiva's milk chocolate!,28,../images/products/godiva.jpg,godiva
+10,Lindt Lindor Milk Chocolate Candy Truffles,milk,A bag of the famous lindt lindor's milk chocolate!,14,../images/products/lindor.jpg,lindor
+11,Ferrero Assorti,milk,Rafaello and ferrero combined,18,../images/products/ferreroAssorti.jpg,ferrero
