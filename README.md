@@ -9,7 +9,7 @@ The website consists of four main pages:
 * Cart
 * About
 
-For the detailed view of all the files within the project, please go to: [https://github.com/INF124-W22/assignment-3-team3/blob/main/README.md]
+For the detailed view of all the files within the project, please go to: [https://github.com/aikakyrgyz/JavaServlets-Ecommerce-Website]
 
 ### Additional Files that were added:
 * **CityStateServlet.java**: For Ajax abilities of the website. When the user enters text in the State field, it will return a JSON object of all the matching states from the database. In times when the user enters the zip code (the database must contain this zip code), the zip code, total price, and the tax values will be sent with the request. When received, tt will find the city, state, and tax rate that are associated with this code and return a JSON object with the updated tax charge, total price, as well as city and state fields.
