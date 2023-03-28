@@ -1,15 +1,4 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10449284&assignment_repo_type=AssignmentRepo)
 
-
-# Assignment-4
-
-# Team Members
-
-Ayako Kuwayama ID#: 52381852 Email: kuwayama@uci.edu
-
-Orhan Ozbasaran ID#: 63039729 Email: oozbasar@uci.edu
-
-Aigerim Kubanychbek kyzy ID#: 70321299 Email: akubanyc@uci.edu
 
 Chocoland Website with Servlet as a Maven project using Tomcat 9.x Server.
 
